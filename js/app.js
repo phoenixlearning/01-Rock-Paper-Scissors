@@ -2,13 +2,11 @@ const piedra = document.querySelector("#piedra");
 const papel = document.querySelector("#papel");
 const tijera = document.querySelector("#tijera");
 
-// Variables globales para el juego
 
 let jugadaUsuario = "";
 let jugadaPc = "";
 let resultado = "";
 
-// Funcion que genera la eleccion de la computadora
 
 function generarJugadaPc() {
   const opciones = ["piedra", "papel", "tijera"];
@@ -16,7 +14,6 @@ function generarJugadaPc() {
   return opciones[jugada];
 }
 
-// Funcion para determinar el resultado
 
 function determinarResultado() {
   if (jugadaUsuario === jugadaPc) {
@@ -32,7 +29,6 @@ function determinarResultado() {
   }
 }
 
-// Controladores de los botones
 
 piedra.addEventListener("click", function () {
   jugadaUsuario = "piedra";
@@ -64,10 +60,9 @@ tijera.addEventListener("click", function () {
   resultadoEnPantalla();
 });
 
-// Funcion que muestra el resultado en pantalla
 
 function resultadoEnPantalla() {
   document.querySelector(
     "#resultado"
-  ).innerHTML = `<h4 class='resultado'>Elegiste ${jugadaUsuario}, la computadora eligio ${jugadaPc}. El resutlado es: ${resultado}</h4>`;
+  ).innerHTML = ` <div class="resultado"><p>Elegiste <span>${jugadaUsuario}</span> y la computadora eligio <span>${jugadaPc}.</span></p> <p> El resutlado es: <span>${resultado}</span></p></div>`;
 }
