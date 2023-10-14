@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+.container {
+  padding: 50px 0;
+  margin: auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.resultado {
+  padding: 15px;
+  background-color: white;
+  border-radius: 0.5em;
+  background: white;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
